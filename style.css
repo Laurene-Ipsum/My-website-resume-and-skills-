@@ -55,11 +55,28 @@ cvSite {
    font-family: 'Staatliches', cursive;
    background-color: #6665ee;
   
-  }   
+  } 
+  @media (max-width:700px) { 
+    .btn {
+      font: #ffffff;
+       font-size: 0.7em;
+       padding: 8px;
+       border-radius: 5%;
+       border: none;
+       font-family: 'Staatliches', cursive;
+       background-color: #6665ee;
+      
+      } 
+  } 
 /*****************************************/
 #sectionPres{
   grid-area: pres;
   margin:  0 100px;
+}
+@media (max-width:980px) { 
+  #sectionPres{
+    margin:  0 10px;
+  }
 }
 /*****************************************/ 
 #sectionskills{
@@ -77,11 +94,12 @@ cvSite {
 }
 .partOne{
 margin: 3px;
-width: auto;
+width: 45%;
 
 }
 .partTwo{
-  margin: 3px;
+ 
+  width: 45%;
   
   }
 ::selection{
@@ -306,7 +324,12 @@ animation: showText2 0.5s 1.5s linear forwards;
 }
 @media (max-width: 564px) { 
   .ba-wrap {
-    visibility : hidden;
+    display: none !important;
+  }
+ 
+  .contentVmobile::before{
+    content: "Version mobile du site / pour télécharger le cv cliquez ici";
+		
   }
 }
 /*****************************************/
@@ -318,12 +341,19 @@ animation: showText2 0.5s 1.5s linear forwards;
   align-items: center;
 }
 .imgprofil{
-  width: 20%;
+  width: 40vh;
   }
 .aboutext {
   display: flex;
   justify-content: center;
-  margin: 0 20%;
+  margin: 0 45vh;
+}
+@media (max-width:980px) { 
+  .aboutext {
+    display: flex;
+    justify-content: center;
+    margin: 0 4%;
+  }
 }
 /*****************************************/
 #sectionPortfolio{
@@ -351,7 +381,7 @@ animation: showText2 0.5s 1.5s linear forwards;
 .contexteResp{
   font-size: 0.6em;
 }
-@media (max-width: 548px) { 
+@media (max-width: 667px) { 
   .blocportfolio{
     justify-content: center;
     margin: 55px auto;
@@ -363,19 +393,7 @@ animation: showText2 0.5s 1.5s linear forwards;
       width: 70%;
   }
 }
-@media (min-width: 941px) and (max-width: 1305px) { 
-  .blocportfolio{
-    justify-content: center;
-    margin: 55px auto;
-    text-align: center;
-    display: flex;
-    flex-wrap: no-wrap;
-  }
-  .imgportfolio{
-      width: 80%;
-  }
-    
-}
+
 /*****************************************/
 #sectionContact{
   /* background: rgb(173, 214, 23); */
@@ -406,6 +424,8 @@ animation: showText2 0.5s 1.5s linear forwards;
   height: 100px;
   display: flex;
   justify-content: center;
+  font-size: 0.5em;
+  box-sizing: content-box;
 }
 /*****************************************/  
 .hide
