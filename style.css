@@ -362,7 +362,7 @@ animation: showText2 0.5s 1.5s linear forwards;
 }
 .blocportfolio{
   justify-content: center;
-  margin: 55px auto;
+  margin: auto auto;
   text-align: center;
   display: flex;
 }
@@ -371,15 +371,17 @@ animation: showText2 0.5s 1.5s linear forwards;
 }
 .technoSite{
   font-size: 0.8em;
+  color:#6665ee;
 }     
-.lienSite{
+.lienSite a{
   font-size: 0.8em;
+  color:#fff;
 }
 .contexteSite{
-  font-size: 0.8em;
+  font-size:0.8em;
 }
 .contexteResp{
-  font-size: 0.6em;
+  font-size: 1em;
 }
 @media (max-width: 667px) { 
   .blocportfolio{
@@ -433,4 +435,7 @@ animation: showText2 0.5s 1.5s linear forwards;
  display: none
 }
 /*****************************************/
-
+.lienCv{
+  /* text-decoration: none; */
+  color: rgb(255, 255, 255);
+}

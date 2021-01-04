@@ -21,28 +21,6 @@ let bool = true;
      }
    });
 
-// document.getElementById("btnchange").innerHTML = "Light Mode";
-// document.getElementById("btnchange").innerHTML = "Dark Mode";
-
-// function changeText(text) {
-//     document.getElementById("pText").innerHTML=text;
-    
-//     }
-
-
-//  for (var i = 0; i < document.getElementsByClassName('image_box').length; i++) {
-//     document.getElementsByClassName('image_box')[i].addEventListener('mousemove',function()
-//     {
-//     this.children[1].style.width=e.pageX-this.offsetLeft;
-//     },false);
-// };
-
-// var slide = document.getElementById('slide');
-// document.getElementById("contain").onmousemove = function(e){
-//     var x = e.clientX;
-//     slide.style.left = x+'px';
-// }
-
 
 const beforeAfter = (function() {
     const wrapper = document.body.querySelector(".ba-wrap");
